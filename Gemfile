@@ -15,7 +15,7 @@ gem 'devise'
 #admin
 gem 'rails_admin', '~> 1.3'
 # Authorization
-gem 'cancancan', '~> 1.6'
+gem 'cancancan', '~> 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
