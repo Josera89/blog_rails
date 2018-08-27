@@ -1,35 +1,8 @@
-<h1>Listing Articles</h1>
 
 
-
-<% if user_signed_in? %>
-  <li>
-    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-  </li>
-  <% if can? :access, :rails_admin %>
-    <li>
-      <%= link_to 'Admin', rails_admin_path %>
-    </li>
-  <% end %>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>  
-  </li>
-  <% if can? :access, :rails_admin %>
-    <li>
-      <%= link_to 'Admin', rails_admin_path %>
-    </li>
-  <% end %>
-<% end %>
+<br>
 
 
-
-
-
-
-
-
-<%= link_to 'New article', new_article_path %>
 <table>
   <tr>
     <th>Title</th>
@@ -51,3 +24,5 @@
     </tr>
   <% end %>
 </table>
+<br>
+<%= link_to 'New article', new_article_path %>
